@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--este es el menu de navegacion-->
+        <nav class="menu" id="menu">
+            <ul>
+                <!--al dar clic se llaman las funciones para cargar las vistas en la seccion contenido dinamico-->
+                <li><a href="#" onclick="cargarLogin()">Iniciar Sesión</a></li>
+                <li><a href="#" onclick="cargarAltaUsuario()">Registro de usuario</a></li>
+            </ul>
+        </nav>
+        
+        <!-- esta seccion es para no abrir el login y el registro en una pagina nueva -->
+        <section class="contenidoDinamico" id="contenidoDinamico"> 
+        </section>
+        
+    </body>
+    
+    <!-- aca se vincula con el archivo java script -->
+    <script src="js/funcionesIndex.js"></script>
+    <script src="js/funcionesLogin.js"></script>
+    <script src="js/funcionesAltaUsuario.js"></script>
+    
+</html>
